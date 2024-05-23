@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body>
+
+
+    <div class="  h-[100vh] mx-auto flex justify-center items-center border-4 border-black" id="container">
+        <div id="todoBox" class="w-[40rem] h-[40rem] border-4 border-black rounded-xl p-4">
+            <div id="inputBox" class="border-2 border-black flex px-4 py-4 rounded-lg">
+                <input type="text" id="input" class="grow px-3 py-3 outline-none" placeholder="Enter the Task"
+                    autocomplete="off">
+                <div id="addBtn" class=" flex items-center p-2 rounded-lg bg-slate-600  text-white cursor-pointer">
+                    Add to Task
+                </div>
+            </div>
+            <div id="displayTask" class=" flex border-2 border-black mt-2 rounded-lg flex-col gap-2 justify-between ">
+            </div>
+
+
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
