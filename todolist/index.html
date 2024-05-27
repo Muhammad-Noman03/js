@@ -4,23 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TodoList</title>
     <link rel="stylesheet" href="./css/output.css">
 </head>
 
 <body>
 
-
-    <div class="  h-[100vh] mx-auto flex justify-center items-center border-4 border-black" id="container">
-        <div id="todoBox" class="w-[40rem] h-[40rem] border-4 border-black rounded-xl p-4">
-            <div id="inputBox" class="border-2 border-black flex px-4 py-4 rounded-lg">
+    <div id="heading " class="text-center mt-2  font-bold text-4xl p-2 bg-slate-600 text-white font-Roboto mb-3">
+        <a href="./index.html">TodoList</a>
+    </div>
+    <div class="  h-[100vh] mx-auto flex justify-center items-center font-Roboto" id="container">
+        <div id="todoBox" class="w-[40rem] h-[40rem]  rounded-xl p-4">
+            <div id="inputBox" class="border-2 border-black flex p-2 rounded-lg">
                 <input type="text" id="input" class="grow px-3 py-3 outline-none" placeholder="Enter the Task"
                     autocomplete="off">
-                <div id="addBtn" class=" flex items-center p-2 rounded-lg bg-slate-600  text-white cursor-pointer">
+                <div id="addBtn" class=" flex items-center p-3 rounded-lg bg-slate-600  text-white cursor-pointer">
                     Add to Task
                 </div>
             </div>
-            <div id="displayTask" class=" flex border-2 border-black mt-2 rounded-lg flex-col gap-2 justify-between ">
+            <div id="displayTask" class=" flex border-2 mt-2 rounded-lg flex-col gap-2 justify-between ">
+                <!-- <div id="Task${index}" class=" flex p-2 rounded-lg border-2 border-black">
+                    <input type="text" id="input" class="outline-none grow" placeholder="Enter the Task"
+                        autocomplete="off" value="${value}" readonly>
+                    <div id="editBtn"
+                        class=" flex items-center justify-center mr-2 w-[6rem] p-2 rounded-lg bg-slate-600 text-white cursor-pointer"
+                        data-id="task${index}" onClick="edit(event,${index})">
+                        Edit Task
+                    </div>
+                    <div id="deleteBtn"
+                        class=" flex items-center p-3 rounded-lg  bg-slate-600 text-white cursor-pointer"
+                        data-id="task${index}" onClick="deleteTask(${index})">
+                        Delete Task
+                    </div>
+                </div> -->
             </div>
 
 
