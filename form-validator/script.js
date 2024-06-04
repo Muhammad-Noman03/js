@@ -6,7 +6,8 @@ const verify = document.querySelector('.verify');
 
 const members = ["Noman", "Faizan", "Sufiyan"];
 
-input.addEventListener('input', (e) => {
+input.addEventListener('input', () => {
+
     checking(input);
 })
 
@@ -16,11 +17,13 @@ function checking(input) {
     const final = members.includes(input.value);
     if (!final) {
         checkBtn.disabled = final;
-        verify.textContent = "You are not a Member"
+        verify.textContent = "";
+
     }
-    else {
+    else if (final) {
         checkBtn.disabled = !final;
-        verify.textContent = "Yes, You are a Member"
+        verify.textContent = "Yes, You are a Member";
+
     }
 }
 
